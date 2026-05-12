@@ -48,3 +48,16 @@ function salvarLembrete(){
         descricaoInput.value;
 
 }
+
+// VALIDAÇÃO DE DADOS
+
+if(
+    !imagem ||
+    !data ||
+    !hora ||
+    !descricao
+){
+
+    resultado.innerHTML = "Preencha todos os campos";
+    return;
+}
