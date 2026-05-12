@@ -30,3 +30,21 @@ btnSalvar.addEventListener("click",salvarLembrete);
 function salvarLembrete(){
     console.log('Sistema iniciado')
 }
+
+//CAPTURA DE DADOS
+
+function salvarLembrete(){
+
+    const imagem =
+        imagemInput.files[0];
+
+    const data =
+        dataInput.value;
+
+    const hora =
+        horaInput.value;
+
+    const descricao =
+        descricaoInput.value;
+
+}
