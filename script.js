@@ -61,3 +61,8 @@ if(
     resultado.innerHTML = "Preencha todos os campos";
     return;
 }
+
+// ADICIONA MENSAGEM DINÂMICA
+
+const mensagem = "Lembrete criado para ${data} às ${hora}";
+resultado.innerHTML = mensagem;
