@@ -66,3 +66,14 @@ if(
 
 const mensagem = "Lembrete criado para ${data} às ${hora}";
 resultado.innerHTML = mensagem;
+
+// IMAGEM ENVIADA
+
+const leitor = new FileReader();
+leitor.onload = function(evento){
+    
+    preview.src = evento.target.result;
+    preview.style.display = "block";
+};
+
+leitor.readAsDataURL(imagem);
