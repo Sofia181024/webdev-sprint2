@@ -71,9 +71,31 @@ resultado.innerHTML = mensagem;
 
 const leitor = new FileReader();
 leitor.onload = function(evento){
-    
+
     preview.src = evento.target.result;
     preview.style.display = "block";
 };
 
 leitor.readAsDataURL(imagem);
+
+// SISTEMA DE ALARME
+
+iniciarAlarme(data,hora,descricao);
+
+function iniciarAlarme(data,hora,descricao){
+
+    setInterval(() => {
+
+        const agora = new Date();
+        const dataAtual = agora.toISOString().split("T")[0];
+        const horaAtual = agora.toTimeString().slice(0,5);
+
+        if(
+            dataAtual === data &&
+            horaAtual === hora
+        ){
+            alert("Hora de estudar!\n${descricao}");
+        }
+
+    },1000);
+}
