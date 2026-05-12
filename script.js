@@ -20,3 +20,7 @@ const resultado =
 
 const preview =
     document.getElementById("preview");
+
+// EVENTO DO BOTÃO
+
+btnSalvar.addEventListener("click",salvarLembrete);
