@@ -99,3 +99,17 @@ function iniciarAlarme(data,hora,descricao){
 
     },1000);
 }
+
+// MELHORIA DA IMAGEM
+
+if(navigator.vibrate){
+
+    navigator.vibrate([500,300,500]);
+}
+
+melhorarImagem();
+
+function melhorarImagem(){
+
+    preview.style.filter = "contrast(120%) brightness(110%) saturate(130%)";
+}
