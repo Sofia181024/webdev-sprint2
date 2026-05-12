@@ -24,3 +24,9 @@ const preview =
 // EVENTO DO BOTÃO
 
 btnSalvar.addEventListener("click",salvarLembrete);
+
+// FUNÇÃO PRINCIPAL
+
+function salvarLembrete(){
+    console.log('Sistema iniciado')
+}
